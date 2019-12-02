@@ -4,7 +4,8 @@
 <title>Menú Navegación Izquierda</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-#panelNavegacion a {
+    /*
+#panelNavegacion a{
     position: absolute;
     left: -150px;
     transition: 0.3s;
@@ -14,44 +15,73 @@
     font-size: 20px;
     color: red;
     border-radius: 0 5px 5px 0;
-    /*opacity:0;*/
+
 }
 
 #panelNavegacion a:hover {
     opacity:0.7;
     left: 0;
 }
-/*#acerca {
+#acerca {
     top: 0px;
     background-color: #4CAF50;
-}*/
+}
 
-.texto:hover{
+#panelNavegacion .menu:hover{
     width: 170px;
     height: 100vh;
     opacity: 1;
 	margin-left:80px;
     background-color: brown;
 }
-.texto{
-    
+#panelNavegacion .menu{
+    opacity: 0;
     background-color: brown;
 }
 a{
+    
     opacity: 1;
     text-align: right;
 }
+*/
+.sidenav a{
+    position: absolute;
+    left: -150px;
+    transition: 0.3s;
+    width: 170px;
+    height: 100%;
+    text-decoration: none;
+    
+
+}
+a{
+    
+    color: rgb(0, 0, 0);
+    opacity: 1;
+    background: linear-gradient(to right, rgba(17,81,144,1) 88%, rgba(78,97,139,1) 88%, rgb(255, 255, 255) 88%, rgb(255, 255, 255) 88%);
+    
+    
+    text-align: right;
+}
+.menu{
+    opacity: 0;
+    background-color: red;
+}
+.menu:hover{
+    opacity: 1;
+    background-color: red;
+}
+.sidenav a:hover {
+    opacity:0.7;
+    left: 0;
+}
+
 </style>
 </head>
 <body>
 <div id="panelNavegacion" class="sidenav">
-  <a href="#" id="acerca">A</a>
-  <div class="texto">
-
-  
+  <a href="#"><img src="img/logo.png" alt="">s</a>
+  <div class="menu"></div>
 </div>
-</div>
-
-     
 </body>
 </html> 
