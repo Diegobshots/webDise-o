@@ -1,0 +1,7 @@
+<palette>
+<color name='paleta-1' rgb='262223' r='38' g='34' b='35' />
+<color name='paleta-2' rgb='A68A68' r='166' g='138' b='104' />
+<color name='paleta-3' rgb='A69581' r='166' g='149' b='129' />
+<color name='paleta-4' rgb='F2E0DF' r='242' g='224' b='223' />
+<color name='paleta-5' rgb='F2F2F2' r='242' g='242' b='242' />
+</palette>
