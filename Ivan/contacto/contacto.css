@@ -1,0 +1,13 @@
+.boton{
+    height: 40px;
+    width: 100px;
+    border: 0;
+    background: linear-gradient(180deg,rgba(226,226,226,1) 0%, rgba(219,219,219,1) 29%, rgba(209,209,209,1) 43%, rgba(0,0,0,1) 57%, rgba(0,0,0,1) 100%);
+    background-size: 1px 100px;
+    transition: all .3s;
+
+} .boton:hover{
+    background-position: 0 -50px;
+    transition: all .3s;
+    color: white;
+}
