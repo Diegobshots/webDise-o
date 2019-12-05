@@ -54,19 +54,60 @@
         .fa-heart, .fa-shopping-bag, .fa-bars{
             transition: all .2s ease;
         }
-        .fa-heart:hover, .fa-shopping-bag:hover, .fa-bars:hover { transform: scale(1.8); }
+        .fa-bars{
+            padding-left: 80px;
+            top: 40px;
+            
+        }
+        .fa-heart:hover, .fa-shopping-bag:hover, .fa-bars:hover {
+            transform: scale(1.8);
+            color: #A68A68;
+
+        }
         .fondoIndex{
             width: 100%;
         }
+        /*ESTILO BARRA NAVEGADOR */
+        .sidenav .etiqueta{
+            position: absolute;
+            left: -120px;
+            transition: 0.3s;
+            width: 170px;
+            height: 100%;
+            text-decoration: none;
+            
 
+        }
+        .etiqueta{
+            position: absolute;
+            color: rgb(0, 0, 0);
+            opacity: 1;
+            background: linear-gradient(to right, rgb(0, 0, 0) 70%, rgb(0, 0, 0) 70%, rgba(255, 255, 255, 0) 70%, rgba(255, 255, 255, 0) 70%);
+            top: 22px;
+            
+            text-align: right;
+        }
+
+        .menu{
+            opacity: 0;
+            background-color: red;
+        }
+        
+        .sidenav .etiqueta:hover {
+            opacity:0.7;
+            left: 0;
+        }
     </style>
 </head>
 <body>
 
-    
+    <div id="panelNavegacion" class="sidenav">
+        <a class="etiqueta" href="#"><i class="fas fa-bars"></i></a>
+        <div class="menu"></div>
+      </div>
     <div class="contenedor">
         <div class="cabecera">
-            <div class="auxiliar"><i class="fas fa-bars"></i></div>
+            <div class="auxiliar"></div>
             <div class="logo"><img src="../img/logo.png" alt="Daniel Wellington"></div>
             <div class="botonesCabecera"><i class="far fa-heart"></i><i class="fas fa-shopping-bag"></i></div>
         </div>
