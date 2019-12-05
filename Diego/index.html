@@ -5,19 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="../icons/css/solid.css">
+    <link rel="stylesheet" href="../icons/css/fontawesome.css">
+    <link rel="stylesheet" href="../icons/css/brands.css">
+    <link rel="stylesheet" href="../icons/css/regular.css">
     <style>
         /*ESTILO GENERAL*/
         body, html{
             margin: 0;
             padding: 0;
-            height: 700px;
+            height: 100vh;
+            background-color: #F2F2F2;
+
+        }
+        *{
+            box-sizing: border-box;
         }
         /*ESTILO PARA LA CABECERA*/
         .cabecera{
-            height: 20%;
+            
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 10vh;
             width: 100%;
-            border: 1px solid;
+            background-color: #fff;
+            -webkit-box-shadow: 0px 6px 22px -12px rgba(0,0,0,0.75);
+            -moz-box-shadow: 0px 6px 22px -12px rgba(0,0,0,0.75);
+            box-shadow: 0px 6px 22px -12px rgba(0,0,0,0.75);
 
+        }
+        .cabecera .logo img{
+            height: 58px;
+    
+        }
+        .botonesCabecera{
+            width: 150px;
+            display: flex;
+            justify-content: space-around;
+            color: #262223;
+            padding-right: 20px;
+        }
+        .auxiliar{
+            width: 150px;
+            color: #262223;
+            padding-left: 40px;
+        }
+        .fa-heart, .fa-shopping-bag, .fa-bars{
+            transition: all .2s ease;
+        }
+        .fa-heart:hover, .fa-shopping-bag:hover, .fa-bars:hover { transform: scale(1.8); }
+        .fondoIndex{
+            width: 100%;
         }
 
     </style>
@@ -27,10 +66,12 @@
     
     <div class="contenedor">
         <div class="cabecera">
-            
+            <div class="auxiliar"><i class="fas fa-bars"></i></div>
+            <div class="logo"><img src="../img/logo.png" alt="Daniel Wellington"></div>
+            <div class="botonesCabecera"><i class="far fa-heart"></i><i class="fas fa-shopping-bag"></i></div>
         </div>
         <div class="cuerpo">
-
+            <img class="fondoIndex" src="../img/fondoIndex.jpg" alt="">
         </div>
     </div>
     
