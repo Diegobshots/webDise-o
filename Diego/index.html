@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../icons/css/fontawesome.css">
     <link rel="stylesheet" href="../icons/css/brands.css">
     <link rel="stylesheet" href="../icons/css/regular.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300|Nothing+You+Could+Do&display=swap" rel="stylesheet">
     <style>
         /*ESTILO GENERAL*/
         body, html{
@@ -16,6 +17,7 @@
             padding: 0;
             height: 100vh;
             background-color: #F2F2F2;
+            font-family: 'Josefin Sans', sans-serif;
 
         }
         *{
@@ -58,6 +60,7 @@
             padding-left: 80px;
             top: 40px;
             
+            
         }
         .fa-heart:hover, .fa-shopping-bag:hover, .fa-bars:hover {
             transform: scale(1.8);
@@ -97,6 +100,86 @@
             opacity:0.7;
             left: 0;
         }
+        /* ESTILO CUERPO */
+        .cuerpo{
+            display: flex;
+            flex-direction: row;
+        }
+        .principalDerecha{
+            display: flex;
+            flex-direction: column;
+        }
+        .anuncios{
+            display: flex;
+            flex-direction: row;
+            position: absolute;
+        }
+        .principalIzquierda{
+            width: 50vw;
+        }
+        .principalDerecha{
+            padding-top: 40px;
+            margin-left: 50px;
+            width: 40vw;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
+        .anuncio1, .anuncio2, .anuncio3{
+            
+           
+            border: 0px solid #000000;
+            background-color: rgba(255, 255, 255, 0.568);
+            margin: 40px;
+            position: relative;
+            font-size: 40px;
+            text-align: center;
+        }
+        .anuncio1{
+            display: flex;
+            height: 89px;
+            align-items: center;
+            justify-content: center;
+            animation-name: entrada1;
+            animation-duration: 1s;
+            animation-timing-function: ease;
+            
+        }
+        
+        .anuncio2{
+            display: flex;
+            height: 89px;
+            align-items: center;
+            justify-content: center;
+            animation-name: entrada1;
+            animation-duration: 1.5s;
+            animation-timing-function: ease;
+        }
+        .anuncio3{
+            display: flex;
+            height: 89px;
+            align-items: center;
+            justify-content: center;
+            animation-name: entrada1;
+            animation-duration: 2s;
+            animation-timing-function: ease;
+        }
+        @keyframes entrada1 {
+            0%{
+                right: -20px;
+            }
+            25%{
+                right: 20px;
+            }
+            50%{
+                right: -20px;
+            }
+            100%{
+                right: 0;
+            }
+        }
+        
+        }
     </style>
 </head>
 <body>
@@ -113,6 +196,16 @@
         </div>
         <div class="cuerpo">
             <img class="fondoIndex" src="../img/fondoIndex.jpg" alt="">
+            <div class="anuncios">
+                <div class="principalIzquierda"></div>
+
+                <div class="principalDerecha">
+                    <div class="anuncio1">Simplicidad y elegancia</div>
+                    <div class="anuncio2">Ultimo modelo</div>
+                    <div class="anuncio3">Precisión suiza</div>
+                </div>
+            </div>
+            
         </div>
     </div>
     
