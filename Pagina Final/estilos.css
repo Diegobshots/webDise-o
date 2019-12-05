@@ -180,6 +180,86 @@ body, html{
         right: 0;
     }
 }
+/*Relojes*/
+.contenedor{
+    position: relative;
+
+}
+.contenedor img{
+    width: 100%;
+    height: 100%;
+    
+}
+.contenedorPrincipal{
+    
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 450px;
+    grid-column-gap: 10px;
+    justify-items: center;
+    
+}
+
+h1{
+    letter-spacing: 3px;
+    text-align: center;
+}
+h3{
+    letter-spacing: 2px;
+    text-align: center;
+   
+    
+}
+.descuento{
+    width: 100%;
+    height: 60px;
+    background-color: brown;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    color: white;
+
+}
+
+.parrafo{
+    letter-spacing: 3px;
+}
+.fotter{
+    
+    background-color:white;
+    display: grid;
+    margin-bottom: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px;
+    justify-items: center;
+    padding: 20px;
+    align-items: end;
+    
+}
+.capa{
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    height: 0px;
+    width: 100%;
+    transition: .5s ease;
+    background-color:rgba(0,0,0,0.6);
+
+}
+.text{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    white-space: nowrap;
+}
+.contenedor:hover .capa{
+    height: 100%;
+}
 
 /*PAGINA DE CONTACTO*/
 .principal{
