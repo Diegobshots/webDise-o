@@ -39,9 +39,6 @@ h3{
 
 }
 
-body{
-margin: 0;
-}
 .parrafo{
     letter-spacing: 3px;
 }
@@ -112,4 +109,38 @@ margin: 0;
 .sidenav .etiqueta:hover {
     opacity:0.7;
     left: 0;
+}
+.cabecera{
+            
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+    background-color: #fff;
+    -webkit-box-shadow: 0px 6px 22px -12px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 6px 22px -12px rgba(0,0,0,0.75);
+    box-shadow: 0px 6px 22px -12px rgba(0,0,0,0.75);
+
+}
+.cabecera .logo img{
+    height: 58px;
+
+}
+.botonesCabecera{
+    width: 150px;
+    display: flex;
+    justify-content: space-around;
+    color: #262223;
+    padding-right: 30px;
+}
+body, html{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #F2F2F2;
+
+}
+*{
+    box-sizing: border-box;
 }
