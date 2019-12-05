@@ -1,6 +1,53 @@
+.cabecera{
+            
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+    background-color: #fff;
+    -webkit-box-shadow: 0px 6px 22px -12px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 6px 22px -12px rgba(0,0,0,0.75);
+    box-shadow: 0px 6px 22px -12px rgba(0,0,0,0.75);
+
+}
+.cabecera .logo img{
+    height: 58px;
+
+}
+.botonesCabecera{
+    width: 150px;
+    display: flex;
+    justify-content: space-around;
+    color: #262223;
+    padding-right: 20px;
+}
+.auxiliar{
+    width: 150px;
+    color: #262223;
+    padding-left: 40px;
+}
+.fa-heart, .fa-shopping-bag, .fa-bars{
+    transition: all .2s ease;
+}
+.fa-bars{
+    padding-left: 80px;
+    top: 40px;
+    
+}
+.fa-heart:hover, .fa-shopping-bag:hover, .fa-bars:hover {
+    transform: scale(1.8);
+    color: #A68A68;
+
+}
+.fondoIndex{
+    width: 100%;
+}
+/*ESTILO BARRA NAVEGADOR */
 .sidenav .etiqueta{
+    
     position: absolute;
-    left: -150px;
+    left: -120px;
     transition: 0.3s;
     width: 170px;
     height: 100%;
@@ -9,17 +56,18 @@
 
 }
 .etiqueta{
-    
+    position: absolute;
     color: rgb(0, 0, 0);
     opacity: 1;
-    background: linear-gradient(to right, rgb(0, 0, 0) 88%, rgb(0, 0, 0) 88%, rgba(255, 255, 255, 0) 88%, rgba(255, 255, 255, 0) 88%);
+    background: linear-gradient(to right, rgb(0, 0, 0) 70%, rgb(0, 0, 0) 70%, rgba(255, 255, 255, 0) 70%, rgba(255, 255, 255, 0) 70%);
+    top: 22px;
     
     text-align: right;
 }
 
 .menu{
     opacity: 0;
-    
+    background-color: red;
 }
 
 .sidenav .etiqueta:hover {
