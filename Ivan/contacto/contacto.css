@@ -1,4 +1,4 @@
-.boton{
+button{
     height: 40px;
     width: 100px;
     border: 0;
@@ -6,7 +6,7 @@
     background-size: 1px 100px;
     transition: all .3s;
 
-} .boton:hover{
+} button:hover{
     background-position: 0 -50px;
     transition: all .3s;
     color: white;
