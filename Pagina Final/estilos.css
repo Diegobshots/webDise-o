@@ -1,3 +1,16 @@
+/*ESTILO GENERAL*/
+body, html{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #F2F2F2;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+*{
+    box-sizing: border-box;
+}
+/*ESTILO PARA LA CABECERA*/
 .cabecera{
             
     display: flex;
@@ -30,11 +43,6 @@
 .fa-heart, .fa-shopping-bag, .fa-bars{
     transition: all .2s ease;
 }
-.fa-bars{
-    padding-left: 80px;
-    top: 40px;
-    
-}
 .fa-heart:hover, .fa-shopping-bag:hover, .fa-bars:hover {
     transform: scale(1.8);
     color: #A68A68;
@@ -45,36 +53,135 @@
 }
 /*ESTILO BARRA NAVEGADOR */
 .sidenav .etiqueta{
-    
     position: absolute;
-    left: -120px;
+    left: -150px;
     transition: 0.3s;
     width: 170px;
     height: 100%;
     text-decoration: none;
-    
-
 }
+
+.enlaces{
+    display: flex;
+    align-items:center;
+    left:-150px;
+    text-align: left;
+    margin-top: 30px;
+    color: black;
+    list-style-type: none;
+    }
+    a{
+        
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+    }
+    .enlaces:hover{
+        left:0px;
+    }
 .etiqueta{
-    position: absolute;
+    
     color: rgb(0, 0, 0);
     opacity: 1;
-    background: linear-gradient(to right, rgb(255, 255, 255) 70%, rgb(255, 255, 255) 70%, rgba(255, 255, 255, 0) 70%, rgba(255, 255, 255, 0) 70%);
-    top: 22px;
+    background: linear-gradient(to right, rgb(255, 255, 255) 88%, rgb(255, 255, 255) 88%, rgba(255, 255, 255, 0) 88%, rgba(255, 255, 255, 0) 88%);
     
     text-align: right;
 }
-
+.etiqueta img{
+    margin-top: 15px;
+    position: absolute;
+    
+}
 .menu{
     opacity: 0;
-    background-color: red;
+    color: black;
 }
 
 .sidenav .etiqueta:hover {
     opacity:0.7;
     left: 0;
+}
+/* ESTILO CUERPO */
+.cuerpo{
+    display: flex;
+    flex-direction: row;
+}
+.principalDerecha{
+    display: flex;
+    flex-direction: column;
+}
+.anuncios{
+    display: flex;
+    flex-direction: row;
+    right: 25px;
+    
+    position: absolute;
+}
+
+.principalDerecha{
+    padding-top: 40px;
+    margin-left: 50px;
+    width: 40vw;
+    display: flex;
+    
+    justify-content: center;
+    align-content: center;
+}
+.anuncio1, .anuncio2, .anuncio3{
+    
+   
+    border: 0px solid #000000;
+    background-color: rgba(255, 255, 255, 0.568);
+    margin: 40px;
+    position: relative;
+    font-size: 40px;
+    text-align: center;
+}
+.anuncio1{
+    display: flex;
+    height: 89px;
+    align-items: center;
+    justify-content: center;
+    animation-name: entrada1;
+    animation-duration: 1s;
+    animation-timing-function: ease;
     
 }
+
+.anuncio2{
+    display: flex;
+    height: 89px;
+    align-items: center;
+    justify-content: center;
+    animation-name: entrada1;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+}
+.anuncio3{
+    display: flex;
+    height: 89px;
+    align-items: center;
+    justify-content: center;
+    animation-name: entrada1;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+}
+@keyframes entrada1 {
+    0%{
+        right: -20px;
+    }
+    25%{
+        right: 20px;
+    }
+    50%{
+        right: -20px;
+    }
+    100%{
+        right: 0;
+    }
+}
+
+/*PAGINA DE CONTACTO*/
 .principal{
     display: grid;
     grid-template-columns:1fr ;
